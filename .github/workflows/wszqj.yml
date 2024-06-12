@@ -1,0 +1,25 @@
+name: 打包vue项目
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  npm-bulid:
+    name: npm-build工作
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 读取仓库内容
+        uses: actions/checkout@4
+
+      - name: 安装依赖：和项目打包
+        run: |
+          npm install
+          npm run build
+
+      - name: 部署
+        uses: JamesIves/github-pages-deploy-actions@4
+        with:
+          branch: gh-pages
+          folder: build
