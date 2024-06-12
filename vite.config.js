@@ -12,5 +12,6 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  base: '/wszqj/'  // 设置为你的仓库名
 })
