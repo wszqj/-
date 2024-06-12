@@ -5,7 +5,7 @@ permissions:
   contents: write
 
 jobs:
-  npm-bulid:
+  npm-build:
     name: npm-build工作
     runs-on: ubuntu-latest
 
