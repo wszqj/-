@@ -13,5 +13,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  base: '/wszqj/'  // 设置为你的仓库名
+  base: '/-/'  // 设置为你的仓库名
 })

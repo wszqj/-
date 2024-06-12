@@ -22,5 +22,5 @@ jobs:
       - name: 部署
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
+          branch: gh-pages  # 保持为 gh-pages 分支
           folder: dist
